@@ -1,17 +1,22 @@
 doctype html
 html
-
   head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='description of your site')
-    meta(name='author', content= "author of the site")
+    meta(name='Books I read', content='Summary of books I read')
+    meta(name='author', content= "Dinesh Weerapurage")
     //- uncomment if your site is responsive!
-    //- meta(name="viewport" content="width=device-width, initial-scale=1")
-    != css()
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1.0")
+    meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" type="text/css" media="screen,projection")
+    // != css()
     block headers
-
   body
+    nav(class=["light-blue", "lighten-1"], role="navigation")
+      div(class=["nav-wrapper", "container"]) #[a(id="logo-container", href="#", class=["brand-logo"]) Logo]
+        ul(class=["right", "hide-on-med-and-down"])
+          li #[a(href="#") Navbar Link]
     block content
-
-    != js()
+ // include javascript here
+ script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+ script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js")
+ // != js()

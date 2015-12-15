@@ -2,7 +2,11 @@ extends layout
 
 block headers
   title Books I read
+
 block content
-  h3 Welcome to roots!
-  :marked
-    Find tutorials and documentation at http://roots.cx : )
+  p Test content for the index page
+  each post in site.posts
+    a.post
+      h2= post.title
+      date= post.date
+      != post.content
