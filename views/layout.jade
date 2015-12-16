@@ -15,7 +15,9 @@ html
       div(class=["nav-wrapper", "container"]) #[a(id="logo-container", href="#", class=["brand-logo"]) Logo]
         ul(class=["right", "hide-on-med-and-down"])
           li #[a(href="#") Navbar Link]
-    block content
+    div.index-banner(class=["section", "no-pad-bot"])
+      div(class=["container"])
+        block content
  // include javascript here
  script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
  script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js")
